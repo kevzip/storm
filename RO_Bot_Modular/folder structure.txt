@@ -1,0 +1,16 @@
+RO_Bot_Modular/
+├── main.py                     ← You run this file
+├── config/
+│   └── gef_fild01.py           ← Your current map (you can add more later)
+├── modules/
+│   ├── __init__.py             ← empty file
+│   ├── movement.py
+│   ├── detection.py
+│   ├── actions.py
+│   ├── memory.py
+│   └── map_loader.py
+├── data/
+│   └── maps/
+│       └── gef_fild01.fld2.gz  ← your existing file goes here
+├── utils.py
+└── requirements.txt           ← optional, for friends

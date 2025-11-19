@@ -1,0 +1,17 @@
+cd C:\LOBOT\RO_Bot_Modular
+
+pyinstaller --onefile --console ^
+    --hidden-import=cv2 ^
+    --hidden-import=pydirectinput ^
+    --hidden-import=keyboard ^
+    --hidden-import=pygetwindow ^
+    --hidden-import=win32gui ^
+    --hidden-import=win32process ^
+    --hidden-import=win32con ^
+    --hidden-import=ctypes ^
+    --hidden-import=numpy ^
+    --collect-all cv2 ^
+    --add-data "data\maps;data\maps" ^
+    --name "Loboto_Modular" ^
+    --icon NONE ^
+    main.py
